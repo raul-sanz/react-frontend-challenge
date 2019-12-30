@@ -32,6 +32,11 @@ class Auth {
   getToken(){
     return this.token
   }
+
+  signout(callback){
+    window.localStorage.removeItem('token')
+    callback();
+  }
 }
 
 export default new Auth();

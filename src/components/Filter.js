@@ -5,7 +5,7 @@ import PropTypes from 'prop-types';
 
 const SearchButton = styled(Button)`
   background-color:#73c6ec;
-  border-radius:15px;
+  border-radius:25px;
 `
 const Nav = styled.nav.attrs({
   className:'flex items-center justify-center flex-wrap p-6 w-full'
@@ -45,7 +45,7 @@ export default function Filter(props) {
         <Margin>
           <div className="text-white font-bold">
             <input type="radio" id="huey" name="drone" value="strict"
-                  checked/>
+                  />
             <label>Strict Mode</label>
           </div>
 
